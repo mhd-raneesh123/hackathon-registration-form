@@ -48,3 +48,9 @@ body {
         button:hover {
             background-color: #0056b3;
         }
+        @media (max-width: 400px) {
+        div[style*="display: flex"] {
+        flex-direction: column; /* Stacks columns on top of each other */
+        gap: 0;
+    }
+}
