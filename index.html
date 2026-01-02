@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Changa+One:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #a6ccf2;
+            font-family: "Roboto Slab", serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-family: "Changa One", sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="date"], 
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures inputs stay inside the box */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div style="border: 1px solid #ddd; padding: 30px; margin: 20px; background-color: #ffffff; width: 485px; border-radius: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="c:\Users\hp\OneDrive\Documents\Github\hackathon form\hachackathon.png" alt="Hackathon Image" width="500" height="150" style="border-radius: 15px;">
+        <h1>Registration form</h1>
+        <form action="">
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="full-name" name="full name" required><br><br>
+
+            <label for="college-id">College Id:</label><br>
+            <input type="text" id="college-id" name="college id" required><br><br>
+
+            <label for="email">Personal Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            
+            <label for="dob" style="margin-left: 2px;">DOB:</label>
+            <input type="date" id="dob" name="dob" style="width: 150px;" required><br><br>
+
+            <label for="dept">Department:</label>
+            <select name="dept" id="dept" required>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="mech">MECH</option>
+                <option value="civil">CIVIL</option>
+                <option value="eee">EEE</option>
+            </select><br><br>
+
+            <label for="year" style="margin-left: 2px;">Year:</label>
+            <select name="year" id="year" style="width: 100px;">
+                <option value="1st year">1st</option>
+                <option value="2nd year">2nd</option>
+                <option value="3rd year">3rd</option>
+                <option value="4th year">4th</option>
+            </select><br><br>
+
+            <label>Participation:</label><br>
+            <input type="radio" id="Individual" name="participation" value="Individual" required>
+            <label for="Individual" style="font-weight: normal;">Individual</label>
+            <input type="radio" id="team" name="participation" value="team" required>
+            <label for="team" style="font-weight: normal;">Team</label><br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" id="skill-web" name="skills" value="coding">
+            <label for="skill-web" style="font-weight: normal;">Web Development</label><br>
+            
+            <input type="checkbox" id="skill-app" name="skills" value="designing">
+            <label for="skill-app" style="font-weight: normal;">App Development</label><br>
+            
+            <input type="checkbox" id="skill-front" name="skills" value="frontend">
+            <label for="skill-front" style="font-weight: normal;">Frontend</label><br>
+            
+            <input type="checkbox" id="skill-back" name="skills" value="backend">
+            <label for="skill-back" style="font-weight: normal;">Backend</label><br>
+            
+            <input type="checkbox" id="skill-design" name="skills" value="marketing">
+            <label for="skill-design" style="font-weight: normal;">Designing</label><br><br>
+
+            <label>Food Preference:</label><br>
+            <input type="radio" id="veg" name="food" value="veg" required>
+            <label for="veg" style="font-weight: normal;">Vegetarian</label>
+            <input type="radio" id="non-veg" name="food" value="non-veg" required>
+            <label for="non-veg" style="font-weight: normal;">Non-Vegetarian</label><br><br>
+            <button style="padding: 12px 15px;">Submit</button><br><br>
+        </form>
+    </div>
+</center>
+</body>
+</html>
