@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<center>
     <div style="border: 1px solid #ddd; padding: 30px; margin: 20px; background-color: #ffffff; width: 485px; border-radius: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <img src="hachackathon.png" alt="Hackathon Image" width="500" height="150" style="border-radius: 15px;">
         <h1>Registration form</h1>
@@ -26,32 +25,40 @@
 
             <label for="phone">Phone Number:</label><br>
             <input type="tel" id="phone" name="phone" required><br><br>
-
+            
+            <div style="display: flex; gap: 20px;">
+            <div style="flex: 1;">
             <label for="gender">Gender:</label>
             <select name="gender" id="gender">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
-            </select><br><br>
-            
-            <label for="dob" style="margin-left: 2px;">DOB:</label>
-            <input type="date" id="dob" name="dob" style="width: 150px;" required><br><br>
-
-            <label for="dept">Department:</label>
+            </select>            </div>
+            <div style="flex: 1;">
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob"><br><br>
+    </div>
+</div>
+<div style="display: flex;gap: 20px;">
+    <div style="flex: 1;">
+<label for="dept">Department:</label>
             <select name="dept" id="dept" required>
                 <option value="cse">CSE</option>
                 <option value="ece">ECE</option>
                 <option value="mech">MECH</option>
                 <option value="civil">CIVIL</option>
                 <option value="eee">EEE</option>
-            </select><br><br>
-
+            </select>
+            </div>
+            <div style="flex: 1;">
             <label for="year" style="margin-left: 2px;">Year:</label>
-            <select name="year" id="year" style="width: 100px;">
+            <select name="year" id="year">
                 <option value="1st year">1st</option>
                 <option value="2nd year">2nd</option>
                 <option value="3rd year">3rd</option>
                 <option value="4th year">4th</option>
             </select><br><br>
+</div>
+</div>
 
             <label>Participation:</label><br>
             <input type="radio" id="Individual" name="participation" value="Individual" required>
@@ -83,6 +90,5 @@
             <button style="padding: 12px 15px;">Submit</button><br><br>
         </form>
     </div>
-</center>
 </body>
 </html>

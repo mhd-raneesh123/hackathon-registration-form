@@ -3,6 +3,15 @@ body {
             font-family: "Roboto Slab", serif;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container{
+            width: 100%;
+            max-width: 485px;
+            box-sizing: border-box;
         }
         h1 {
             font-family: "Changa One", sans-serif;
